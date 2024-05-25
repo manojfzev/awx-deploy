@@ -6,7 +6,7 @@ metadata:
   namespace: awx
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   #volumeMode: Filesystem
   resources:
     requests:
