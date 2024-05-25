@@ -17,7 +17,7 @@ spec:
   #hostname: fqdn.awx.host.com     # Replace fqdn.awx.host.com with Host FQDN and DO NOT use IP.
 
   postgres_configuration_secret: awx-postgres-configuration
-
+  postgres_data_volume_init: true
   postgres_storage_class: gold
   postgres_storage_requirements:
     requests:
