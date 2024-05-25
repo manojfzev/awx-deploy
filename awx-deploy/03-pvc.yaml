@@ -7,9 +7,24 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  volumeMode: Filesystem
+  #volumeMode: Filesystem
   resources:
     requests:
-      storage: 2Gi
-  storageClassName: awx-projects-volume
+      storage: 10Gi
+  storageClassName: gold
 
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: awx-postgres-volume
+  namespace: awx
+spec:
+  accessModes:
+    - ReadWriteOnce
+  #volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 20Gi
+  storageClassName: gold

@@ -7,7 +7,7 @@ resources:
 
   - github.com/ansible/awx-operator/config/default?ref=2.17.0
   - 01-secret.yaml
-  - 02-pv.yaml
+  #- 02-pv.yaml
   - 03-pvc.yaml
   - 04-awx.yaml
 
