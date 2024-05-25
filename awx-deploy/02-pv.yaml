@@ -8,7 +8,7 @@ spec:
     storage: 20Gi
   accessModes:
     - ReadWriteMany
-  storageClassName: awx-postgres-volume
+  storageClassName: awx-projects-volume
   persistentVolumeReclaimPolicy: Retain
   nfs:
     server: 10.69.58.202
