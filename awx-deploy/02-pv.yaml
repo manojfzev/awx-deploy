@@ -13,7 +13,7 @@ spec:
   storageClassName: awx-postgres-volume
   nfs:
     server: 10.69.58.202
-    path: /awx_project/postgres
+    path: /awx_project
 
 ---
 apiVersion: v1
@@ -30,4 +30,4 @@ spec:
   storageClassName: awx-projects-volume
   nfs:
     server: 10.69.58.202
-    path: /awx_project/projects
+    path: /awx_project
