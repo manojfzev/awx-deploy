@@ -8,13 +8,13 @@ spec:
   
   # Set the replicas count to scale AWX pods
   #replicas: 3
-  
+  type: NodePort
   admin_user: admin
   admin_password_secret: awx-admin-password
 
-  ingress_type: ingress
-  ingress_tls_secret: awx-secret-tls
-  hostname: fqdn.awx.host.com     # Replace fqdn.awx.host.com with Host FQDN and DO NOT use IP.
+  #ingress_type: ingress
+  #ingress_tls_secret: awx-secret-tls
+  #hostname: fqdn.awx.host.com     # Replace fqdn.awx.host.com with Host FQDN and DO NOT use IP.
 
   postgres_configuration_secret: awx-postgres-configuration
 
