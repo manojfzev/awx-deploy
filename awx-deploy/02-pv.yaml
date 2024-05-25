@@ -7,7 +7,7 @@ spec:
   capacity:
     storage: 20Gi
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   storageClassName: awx-projects-volume
   persistentVolumeReclaimPolicy: Retain
   nfs:
